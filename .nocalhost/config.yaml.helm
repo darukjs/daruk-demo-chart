@@ -1,0 +1,14 @@
+name: bookinfo
+manifestType: helmGit
+resourcePath: ["charts/hello-node"]
+
+services:
+  - name: hello-node 
+    serviceType: deployment
+    gitUrl: https://github.com/darukjs/daruk-demo
+    devContainerImage: ccr.ccs.tencentyun.com/xiaojue/hello-node:v1
+    workDir: /home/hello-node-dev
+    syncDirs:
+    - ./
+    devPorts:
+    - :9080

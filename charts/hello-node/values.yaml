@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   registry: hello-node
   pullPolicy: IfNotPresent
-  repository: ccr.ccs.tencentyun.com/xiaojue/hello-node
+  repository: ccr.ccs.tencentyun.com/xiaojue/hello-node:v1
 
 service:
   name: hello-node
