@@ -1,0 +1,12 @@
+name: hello-node # 应用的名称
+manifestType: rawManifest # 应用部署方式
+resourcePath: ["manifest/templates"] # 服务的 deployment YAML 相对于仓库的相对目录，支持配置多个目录
+
+services:
+  - name: hello-node
+    serviceType: deployment
+    gitUrl: https://github.com/darukjs/daruk-demo.git
+    devContainerImage: ccr.ccs.tencentyun.com/xiaojue/hello-node:v1
+    syncDirs:
+      - ./
+    workDir: /home/nocalhost-dev

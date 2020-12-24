@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: hello-node
-          image: ccr.ccs.tencentyun.com/xiaojue/hello-node
+          image: ccr.ccs.tencentyun.com/xiaojue/hello-node:v1
           imagePullPolicy: IfNotPresent
           command: ["node", "build/index.js"]
           ports:
