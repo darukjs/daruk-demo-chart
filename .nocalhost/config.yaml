@@ -10,3 +10,5 @@ services:
     syncDirs:
       - ./
     workDir: /home/nocalhost-dev
+    devPorts:
+      - 39080:3000
